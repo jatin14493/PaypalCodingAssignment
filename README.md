@@ -33,3 +33,21 @@ We would like you to enhance the existing project and see you complete the follo
 
 ## Assignment submission
 Thank you very much for your time to take this test. Please upload this complete solution in Github and send us the link to `bfs-sor-interview@paypal.com`.
+
+
+## Assignment 
+
+- For the scope of this assignment, I have modelled and re-used `jsonschema2pojo-maven-plugin` for Entity class creation.
+- Employee Validator class and related Unit Tests are written. (Added a TODO to add UTs for all validations)
+- The APIs and model info is exposed via Swagger UI.
+  http://localhost:8080/swagger-ui.html#/ Use Swagger End point to test the APIs.
+- Error handling is implemented using Global Exception handler (@RestControllerAdvice)
+- For Idempotency condition in case of Employee Creation [Added a constraint on the table based on the combination of (First Name, Last Name and Dob)]
+- Implemented basic UTs. Can be extended to more detailed use case. 
+- Implemented 3 Rest End points. 
+    1. To get employee details based on Id.
+    2. Create an employee resource.
+    3. Get All Employees (Can be made pageable. For now it returns everything)
+- Have handled the error code and exception handling scenarios.
+
+ 
